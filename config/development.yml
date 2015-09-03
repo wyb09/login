@@ -1,0 +1,7 @@
+#devlopment config
+  db:
+    username: bangzhu
+    password: bangzhu
+    database: bangzhu
+    host: 121.43.158.216
+    port: 3306

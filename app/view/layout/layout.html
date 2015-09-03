@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-cn">
+  <meta charset="UTF-8">
+  <title>帮主-CMS后台管理系统</title>
+  <link rel="stylesheet" href="/build/css/mbs.css">
+  <link rel="stylesheet" href="/build/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/build/css/main.css">
+</head>
+<body>
+
+<header class="app-header">
+  <nav class="header-navbar clearfix">
+    <div class="hn-logo"><a href="/"><h1>TOPDMC</h1></a></div>
+    <ul class="hn-nav">
+      <li><a href="/register/">注册</a></li>
+      <li><a href="/login/">登录</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- content -->
+<section class="app-content">
+  <div class="content">
+    {% block content % }
+    {% endblock %}
+  </div>
+
+  <!-- footer -->
+  <footer class="app-footer">
+    <p class="copyright">Copyright &copy; 2015 帮主</p>
+  </footer>
+  <!-- end footer -->
+</section>
+
+<!-- end content -->
+<script src="/build/js/angular.min.js"></script>
+<script src="/build/js/angular-ui-router.min.js"></script>
+<script src="/build/js/jquery.min.js"></script>
+{% block js %}
+{% endblock %}
+
+</body>
+</html>
